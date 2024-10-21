@@ -24,7 +24,7 @@ body {
   background-color: beige;
 
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 1em;
 
   padding: 1em;
@@ -59,4 +59,10 @@ a {
 
 .subject:hover {
   background-color:aliceblue;
+}
+
+@media (min-width: 768px) {
+  #subject-grid {
+    flex-direction: row;
+  }
 }
