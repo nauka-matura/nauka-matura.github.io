@@ -39,6 +39,18 @@ a {
   flex-grow: 1;
 }
 
+#title {
+  text-align: center;
+}
+
+#back-link {
+  margin-top: 2em;
+}
+
+#back-link:hover {
+  text-decoration: underline;
+}
+
 .subject {
   background-color:bisque;
 
