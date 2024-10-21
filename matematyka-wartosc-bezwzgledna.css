@@ -1,0 +1,65 @@
+body {
+  height: 100vh;
+
+  background-color:antiquewhite;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+
+  user-select: none;
+}
+
+* {
+  line-height: 2em;
+}
+
+#title-card {
+  position: absolute;
+  text-align: center;
+}
+
+#abs-description-card {
+  position: absolute;
+  visibility: hidden;
+}
+
+#abs-formula-card {
+  position: absolute;
+  visibility: hidden;
+}
+
+#example-positive-number-card {
+  position: absolute;
+  visibility: hidden;
+}
+
+#example-negative-number-card {
+  position: absolute;
+  visibility: hidden;
+}
+
+#abs-expressions-description-card {
+  position: absolute;
+  visibility: hidden;
+}
+
+#roots-description-card {
+  position: absolute;
+  visibility: hidden;
+}
+
+.positive {
+  color: red;
+}
+
+.negative {
+  color: blue;
+}
+
+.operator {
+  color: orange;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Wartość bezwzględna - Matematyka</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='matematyka-wartosc-bezwzgledna.css'>
+  <script src='matematyka-wartosc-bezwzgledna.js'></script>
+</head>
+<body>
+  <div id="page-content">
+    <!--Page 1-->
+    <div id="title-card">
+      <h1>Matematyka</h1>
+      <h2>Wartość bezwzględna</h2>
+    </div>
+    <div id="abs-description-card">
+      <h2>Zadaniem wartości bezwzględniej jest krótko mówiąc wyeliminowanie <span class="negative">minusa</span> z liczby.<br>Więc jeśli liczba jest <span class="positive">dodatnia</span>, pozostaje taka sama.<br>Jeśli liczba jest <span class="negative">ujemna</span>, jest odwracana na <span class="positive">dodatnią</span>.</h2>
+    </div>
+    <div id="abs-formula-card">
+      <h2>
+        Wartość bezwzględną zapisuje się tak: <span class="operator">|</span>liczba<span class="operator">|</span><br>
+        Przykładowo:<br>
+        <br>
+        Liczba <span class="positive">dodatnia</span>: <span class="operator">|</span><span class="positive" id="example-positive-number"></span><span class="operator">| = </span><span class="positive" id="example-positive-number-result"></span>
+        <br>Liczba <span class="negative">ujemna</span>: <span class="operator">|</span><span class="negative" id="example-negative-number"></span><span class="operator">| = </span><span class="positive" id="example-negative-number-result"></span><br>
+        <br>
+        Zero się nie zmienia:<br>
+        <span class="operator">|</span>0<span class="operator">| = </span>0
+      </h2>
+      <button id="next-1">Dalej</button>
+    </div>
+    
+    <!--Page 2-->
+    <div id="abs-expressions-description-card">
+      <h2>
+        Przykłady z liczbami oczywiście są bardzo proste. Ale w wartości bezwzględnej możemy mieć także normalne inne działania matematyczne.<br>
+        Na przykład:<br>
+        <br>
+        <span class="operator">|</span><span class="positive" id="example-1-a"></span><span class="operator"> + </span><span class="positive" id="example-1-b"></span><span class="operator">| = |</span><span class="positive" id="example-1-result-1"></span><span class="operator">| = </span><span class="positive" id="example-1-result-2"></span><br>
+        A tutaj przykład z liczbami <span class="negative">ujemnymi</span>: <span class="operator">|</span><span class="negative" id="example-2-a"></span><span class="operator"> + </span><span class="negative" id="example-2-b"></span><span class="operator">| = |</span><span class="negative" id="example-2-result-1"></span><span class="operator">| = </span><span class="positive" id="example-2-result-2"></span><br>
+        A tutaj i z <span class="positive">dodatnimi</span> i z <span class="negative">ujemnymi</span>: <span class="operator">|</span><span class="positive" id="example-3-a"></span><span class="operator"> + </span><span class="negative" id="example-3-b"></span><span class="operator">| = |</span><span class="negative" id="example-3-result-1"></span><span class="operator">| = </span><span class="positive" id="example-3-result-2"></span><br>
+        <br>
+        Dlatego ważne jest, żeby najpierw sobie policzyć wszystko, co mamy między tymi znakami <span class="operator">|</span>. A dopiero potem już wynik końcowy wyciągnąć i zamienić na liczbę <span class="positive">dodatnią</span>.
+      </h2>
+      <button id="next-2">Dalej</button>
+    </div>
+
+    <!--Page 3-->
+    <div id="roots-description-card">
+      <h2>
+        Możemy także natknąć się na taką sytuację, gdzie pod wartością bezwzględną będziemy mieli pierwiastki. Na ogół nie jest to coś, czym trzeba się przejmować.<br>
+        Zasady są dokładnie takie same:<br>
+        <br>
+        Liczby <span class="positive">dodatnie</span>: <span class="operator">|</span><span class="positive" id="example-4-a"></span><span class="operator"> + </span><span class="positive" id="example-4-b"></span><span class="operator">| = </span></span><span class="positive" id="example-4-result-a"></span><span class="operator"> + </span><span class="positive" id="example-4-result-b"></span><br>
+        Liczby <span class="negative">ujemne</span>: <span class="operator">|</span><span class="negative" id="example-5-a"></span><span class="operator"> + </span><span class="negative" id="example-5-b"></span><span class="operator">| = </span><span class="negative" id="example-5-result-a"></span><span class="operator"> + </span><span class="negative" id="example-5-result-b"></span><br>
+        (Jeśli wykonujemy działania, gdzie wiemy, że znak się nie zmieni, czyli np. dodajemy do siebie dwa <span class="positive">dodatnie</span> pierwiastki,<br>
+        to możemy je sobie zapisać normalnie w wyniku tak jak powyżej)<br>
+        <br>
+      </h2>
+      <!--<button id="next-3">Dalej</button>-->
+    </div>
+
+    <!--Page 4-->
+    <!--<div id="roots-description-card-2">
+      <h2>
+        A co w sytuacji gdy na przykład <span class="negative">odejmujemy</span> pierwiastek od liczby <span class="positive">dodatniej?</span><br>
+        Tutaj już istnieje możliwość, że zmieni nam się znak na <span class="negative">ujemny</span>, jeśli wartość tego pierwiastka będzie większa od tej pierwszej liczby.<br>
+        <br>
+        Gdy odejmiemy większą liczbę od mniejszej, wyjdzie nam wartość na <span class="negative">minusie</span>. Dokładnie tak samo jest z pierwiastkami.<br>
+        W tym momencie wychodzi nam coś takiego:<br>
+        <span class="operator">|</span><span class="positive" id="example-6-a"></span><span class="operator"> - </span><span class="negative" id="example-6-b"></span><span class="operator">|</span><br>
+        Nie możemy tutaj już wyciągnąć tego działania z wartości bezwzględnej, bo ono daje wynik <span class="negative">na minusie</span>.<br>
+        A wartość bezwzględna ma nam przecież zawsze dawać wynik <span class="positive">dodatni</span>.<br>
+        <br>
+        Będziemy musieli niestety na przykład z kalkulatora obliczyć wartość tego pierwiastka (oczywiście zaokrąglamy powiedzmy do dwóch miejsc po przecinku), a potem to normalnie policzyć:<br>
+        <span class="operator">|</span><span class="positive" id="example-7-a"></span><span class="operator"> - </span><span class="negative" id="example-7-b"></span><span class="operator">| = |</span><span class="positive" id="example-7-result-a"></span><span class="operator"> - </span><span class="negative" id="example-7-result-b"></span><span class="operator">| = |</span><span class="operator"></span>
+      </h2>
+    </div>-->
+  </div>
+  </div>
+</body>
+</html>
